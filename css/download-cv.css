@@ -1,0 +1,41 @@
+/* Fondo oscuro para el formulario flotante */
+.overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo detrás */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+/* Contenedor del formulario flotante (centrado en cualquier pantalla) */
+.form-container {
+    background: white; /* Fondo blanco para ocultar el contenido detrás */
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%; /* Se adapta mejor en móviles */
+    max-width: 300px; /* Evita que se estire demasiado en escritorio */
+
+    /* Centrarlo en cualquier pantalla */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Inputs y botones con tamaño controlado */
+.form-container input,
+.form-container button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+}

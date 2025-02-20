@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Epitome</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main.css">    
+    <link rel="stylesheet" href="../css/download-cv.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="../index.html">
+                <svg width="132" height="36" viewBox="0 0 132 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="10" width="20" height="12" fill="#B22234"/>
+                    <rect x="5" y="14" width="20" height="4" fill="#FFFFFF"/>
+                    <rect x="5" y="18" width="20" height="4" fill="#B22234"/>
+                    <rect x="5" y="10" width="8" height="8" fill="#3C3B6E"/>
+                        <text x="40" y="50%" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="start" alignment-baseline="middle">
+                        English
+                        </text>
+                </svg>
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">Acerca de mí</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">Servicios</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Dí Hola</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="https://www.linkedin.com/in/juandmercadol1989/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header>
+    <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hola, soy Juan Mercado</h3>
+                <h1>
+                    Desarrollador backend <br>
+                    con experiencia en <br>
+                    roles full-stack.
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Desplázate para más
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div>
+        <!-- end row -->
+
+    </section>
+    <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Acerca de mí</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Soy un desarrollador backend con experiencia en roles full-stack, apasionado por crear soluciones de software escalables, eficientes y mantenibles. Mi experiencia incluye el diseño de arquitecturas de sistemas robustas, la implementación de patrones de diseño y la escritura de código limpio y de alta calidad. Me enfoco en optimizar el rendimiento, garantizar la seguridad y mantener las mejores prácticas en el desarrollo de software.
+                    </p>
+
+                    <p class="timeline__desc">
+                        Experiencia en el diseño de arquitecturas de microservicios, monolíticas y serverless para satisfacer las necesidades del negocio de manera eficiente.
+                    </p>
+
+                    <p class="timeline__desc">
+                        Experto en la aplicación de los principios SOLID, inyección de dependencias y diseño basado en dominios (DDD) para crear bases de código mantenibles y escalables.
+                    </p>
+
+                    <p class="timeline__desc">
+                        Doy prioridad a la optimización del rendimiento y la calidad del código mediante las mejores prácticas de desarrollo, garantizando soluciones eficientes, escalables y con un código limpio y mantenible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#contact" class="btn btn--stroke full-width">Contrátame</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a onclick="showPasswordForm()"class="btn btn--primary full-width">Descargar CV</a>
+                </div>
+            </div>
+
+            <div id="overlay" class="overlay">
+                <div class="form-container">
+                    
+                     <h2>Ingresar contraseña</h2>
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="validatePassword()">Confirmar</button>
+                    <br><br>
+                    <button onclick="closePasswordForm()">Cerrar</button>
+                    <p class="timeline__desc">
+                        Este documento contiene datos personales de terceros, por lo que su descarga requiere una contraseña. Solicítela por correo electrónico.
+                    </p>
+                    <p id="mensaje-error"></p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Experiencia y Educación</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <!-- work -->
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Enero 2024 – Present</p>
+                                <h3 class="item-title">Freelancer</h3>
+                                <h5>Freelance Software Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Los servicios ofrecidos abarcan todo el ciclo de vida del software, desde la planificación, análisis, diseño e implementación hasta las pruebas, instalación/despliegue, uso y mantenimiento. En esta última etapa, se brinda soporte técnico, que incluye mantenimiento correctivo y evolutivo para garantizar la estabilidad y mejora continua de los sistemas.<br><br> Además, se realizan auditorías y revisiones de procesos operativos para identificar riesgos como pérdida de insumos, desvío de fondos, errores en facturación, mala gestión de inventarios y baja productividad. Mediante la sistematización y el control eficiente, se optimizan los recursos, se mejora la toma de decisiones y se asegura el cumplimiento normativo, lo que permite que el negocio sea más rentable, escalable y sostenible.<br><br> Si bien la infraestructura física no es el enfoque principal, algunos clientes han solicitado soporte en esta área. Dependiendo de la complejidad del problema, puedo ofrecer asistencia directa o coordinar con especialistas externos para garantizar una solución eficiente. Adicionalmente, se brindan servicios de migración de infraestructura tecnológica a la nube, proporcionando soluciones optimizadas y escalables según las necesidades del negocio.
+                                <br><br>
+                                Tecnologías: Amplio stack tecnológico adaptable según las necesidades del proyecto, sin restricciones.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Diciembre 2020 – Diciembre 2023</p>
+                                <h3 class="item-title">Michael Page International, Colombia</h3>
+                                <h5>Senior Backend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Aval Digital Labs Aval Digital Labs es el laboratorio digital del Grupo AVAL, un grupo bancario en Colombia. Los proyectos desarrollados para este cliente fueron para el Banco Popular y DALE, una billetera digital.<br><br>
+
+                                    <b>Banco Popular:</b> Se desarrollaron múltiples proyectos dentro de una célula de trabajo enfocada en la creación de funcionalidades comunes en la nube usando arquitectura Serverless. Estas funcionalidades permitían a los distintos equipos integrarse de manera eficiente, evitando la existencia de versiones creadas por diferentes equipos para resolver la misma necesidad y garantizando una mayor coherencia dentro del ecosistema. Otros proyectos consistían en integraciones de diferentes sistemas y automatización de procesos.<br><br> Funciones:
+                                    <ul>
+                                        <li>Implementación de Step Functions para la orquestación de servicios en flujos de procesos.</li>
+                                        <li>Desarrollo de funciones AWS Lambda utilizando Micronaut Framework para la creación de servicios escalables y eficientes.</li>
+                                        <li>Integración de API Gateway con AWS Lambda y Step Functions para la gestión y exposición de APIs seguras.</li>
+                                        <li>Gestión de configuración y almacenamiento seguro de parámetros mediante AWS Systems Manager Parameter Store.</li>
+                                        <li>Modificaciones y ajustes menores en la configuración de Amazon Cognito para la autenticación de usuarios.</li>
+                                        <li>Configuración de AWS WAF para reforzar la seguridad de aplicaciones, sin un desarrollo profundo en esta área.</li>
+                                        <li>Diseño de arquitectura de aplicaciones, asegurando escalabilidad, mantenimiento y eficiencia en los sistemas.</li>
+                                    </ul>
+                                    Tecnologías: Java 1.8, Java 11, AWS Step Functions, Micronaut Framework, API Gateway, AWS Lambda, Amazon S3, AWS Systems Manager Parameter Store, AWS IAM, Amazon Cognito, AWS WAF, Terraform, Jenkins, CI/CD, Git.<br><br>
+
+                                    <b>DALE:</b> El proyecto consistía en la construcción de una pasarela de pagos utilizando arquitectura de microservicios y programación reactiva en Java.<br><br> Funciones:
+                                    <ul>
+                                        <li>Desarrollo de microservicios con Spring Boot para garantizar modularidad y escalabilidad.</li>
+                                        <li>Exposición segura de microservicios a través de Amazon API Gateway.</li>
+                                        <li>Implementación de autenticación y autorización con Spring Security y JWT.</li>
+                                        <li>Orquestación y despliegue de microservicios en Amazon EKS.</li>
+                                        <li>Optimización de rendimiento mediante almacenamiento en caché con Redis.</li>
+                                        <li>Configuración de AWS CloudFront para mejorar la distribución de contenido y la latencia.</li>
+                                        <li>Administración segura de credenciales y parámetros con AWS Secrets Manager.</li>
+                                        <li>Automatización de infraestructura con AWS CloudFormation para despliegues eficientes.</li>
+                                        <li>Diseño y optimización de arquitectura basada en microservicios.</li>
+                                    </ul>
+
+                                    Tecnologías: Java 11, Spring Boot 2, Spring Security, JWT, Amazon EKS, Redis, DynamoDB, AWS CloudFront, AWS Secrets Manager, AWS CloudFormation.<br><br>
+
+                                    <b>Funciones en común: Banco Popular/DALE</b>
+                                    <ul>
+                                        <li>Gestión de datos utilizando DynamoDB como base de datos NoSQL escalable.</li>
+                                        <li>Almacenamiento y gestión de datos en Amazon S3, optimizando la disponibilidad y seguridad de la información.</li>
+                                        <li>Administración de roles, permisos y políticas con AWS IAM, asegurando la correcta gestión de accesos en los servicios.</li>
+                                        <li>Definición y gestión de infraestructura como código con Terraform, asegurando despliegues reproducibles y escalables.</li>
+                                        <li>Automatización de despliegues con Jenkins, ejecutando pipelines de CI/CD.</li>
+                                        <li>Implementación de estrategias de CI/CD, optimizando la entrega continua de software.</li>
+                                        <li>Desarrollo y ejecución de pruebas unitarias, garantizando la calidad del código y evitando regresiones.</li>
+                                        <li>Revisión de código para garantizar buenas prácticas y estándares de desarrollo.</li>
+                                        <li>Uso de Git para versionamiento de código y gestión de ramas en entornos colaborativos.</li>
+                                    </ul>
+
+                                    <b>Liberty Seguros:</b> Liberty Seguros es una compañía de seguros que forma parte de Liberty Mutual Insurance Group.<br> Se trabajó en un proyecto de migración de los flujos de procesos de SOA 12c a una arquitectura de servicios REST implementada en Java 8. El producto final fue un ecosistema de aplicaciones que contenían APIs REST, las cuales garantizaban el correcto funcionamiento de todos los procesos sistematizados en el negocio.<br><br> Funciones:
+                                    <ul>
+                                        <li>Migración de flujos de procesos SOA 12c a una arquitectura hexagonal REST implementada en Java 8 con Spring Boot.</li>
+                                        <li>Desarrollo y exposición de APIs REST seguras mediante Spring Boot y JWT, asegurando autenticación y autorización.</li>
+                                        <li>Securización de APIs con JWT, implementando autenticación y autorización mediante tokens para garantizar el acceso seguro a los endpoints.</li>
+                                        <li>Contenerización y despliegue de la aplicación utilizando Docker, garantizando portabilidad y escalabilidad.</li>
+                                        <li>Adaptación de consultas SQL de SOA 12c para su integración en la nueva arquitectura en Spring Boot, asegurando la correcta interacción con Oracle Database.</li>
+                                        <li>Implementación de infraestructura como código con AWS CloudFormation para gestionar recursos en la nube de manera automatizada.</li>
+                                        <li>Automatización de despliegues con Serverless Framework y Jenkins, asegurando integración y entrega continua (CI/CD).</li>
+                                        <li>Gestión de control de versiones y colaboración en el desarrollo mediante Git.</li>
+                                    </ul>
+                                    Tecnologías: Java 1.8, Spring Boot 2, JWT, SOA 12c, Jenkins, Docker, AWS CloudFormation, Oracle Database.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Octubre 2020 – Noviembre 2020</p>
+                                <h3 class="item-title">PersonalSoft, Colombia</h3>
+                                <h5>Analista de Ingeniería de Software</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>En esta compañía participé en un proyecto de migración de aplicativos Java, lo que incluyó la actualización de WebLogic Server a la última versión disponible en ese año. Para garantizar el correcto funcionamiento de las aplicaciones, se llevaron a cabo actividades de resolución de incidentes y ejecución de pruebas.<br><br> Funciones:
+                                    <ul>
+                                        <li>Migración de código fuente de Java 1.6 a Java 1.8 y actualización de WebLogic Server, asegurando compatibilidad y solución de incidentes derivados del ajuste de versión. Se realizaron ajustes en aplicaciones desarrolladas con Java Server Faces (JSF) y en componentes que utilizaban Spring Framework.</li>
+                                        <li>Ejecución de pipelines en Jenkins, facilitando la integración y despliegue continuo de los aplicativos.</li>
+                                        <li>Actualización y gestión de librerías Java utilizadas por los aplicativos, asegurando compatibilidad con la nueva versión de Java.</li>
+                                    </ul>
+                                    Tecnologías: Java 1.6, Java 1.8, WebLogic Server, Jenkins, Java Server Faces, Spring Framework.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Enero 2019 – Febrero 2020</p>
+                                <h3 class="item-title">Enterprise's Improvements, Colombia</h3>
+                                <h5>Desarrollador Java Senior (Contratista)</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Participé en un proyecto de sistematización del control de procesos en la fabricación de joyería, desde la recepción de la orden de compra hasta la entrega del producto final al comprador.<br> La solución optimizó la gestión de cada etapa, mejoró la trazabilidad de los pedidos y redujo el riesgo de pérdida de materiales valiosos como oro y plata. El proyecto se desarrolló en tres etapas, y a partir del inicio de la segunda etapa asumí el rol de líder técnico. Estuve involucrado en todo el ciclo de vida del software, desde el levantamiento de requerimientos y la selección de tecnologías hasta el diseño de arquitectura, implementación y pruebas de certificación. Además, supervisé las pruebas piloto tras la entrega y gestioné la resolución de incidentes para estabilizar el sistema y garantizar su correcto funcionamiento.<br><br> Funciones:
+                                    <ul>
+                                        <li>Desarrollo de servicios backend utilizando Java y Spring Boot para la implementación de la API REST.</li>
+                                        <li>Creación del frontend a partir de una plantilla base, adaptando la interfaz de usuario a los requerimientos del proyecto.</li>
+                                        <li>Integración del backend con el frontend para asegurar el flujo de datos entre la interfaz de usuario y los servicios del sistema.</li>
+                                        <li>Diseño de la base de datos para estructurar la información de acuerdo con los requerimientos del sistema.</li>
+                                        <li>Gestión de la comunicación con la base de datos mediante Spring JPA, facilitando la ejecución de consultas y procedimientos almacenados en SQL Server.</li>
+                                        <li>Creación de scripts para la generación de tablas en el motor de base de datos.</li>
+                                        <li>Diseño de seguridad de la aplicación basado en roles, asegurando el control de acceso a funcionalidades según los permisos asignados.</li>
+                                        <li>Implementación de autenticación y autorización mediante JWT para proteger los servicios del sistema.</li>
+                                        <li>Consumo de servicios SOAP para la integración con el ERP Siesa, permitiendo la sincronización de datos.</li>
+                                        <li>Desarrollo de integraciones con el ERP Siesa para gestionar facturación, inventario y control de materiales valiosos como oro y plata.</li>
+                                        <li>Construcción de vistas dinámicas con Thymeleaf para la presentación de información en la interfaz de usuario.</li>
+                                    </ul>
+                                    Tecnologias: Java 1.8, Spring Boot, Spring JPA, SQL Server, JWT, Thymeleaf, SOAP Services, API REST, ERP Siesa</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Mayo 2018 – Diciembre 2020</p>
+                                <h3 class="item-title">Banco Serfinanza, Colombia</h3>
+                                <h5>Analista de Sistemas Senior</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Durante mi segunda estancia en la empresa, trabajé en el área de tecnología, donde lideré diversos proyectos mientras participaba en la implementación de nuevas aplicaciones y funcionalidades, además de brindar soporte técnico.<br><br> Funciones:
+                                    <ul>
+                                        <li>Gestión y liderazgo en el proyecto de migración del software de nómina y gestión humana con el proveedor externo Novasoft.</li>
+                                        <li>Implementación de integraciones de sistemas y APIs utilizando el bus de integración de IBM.</li>
+                                        <li>Desarrollo y soporte de sistemas internos, empleando .NET, .NET Core y Java con Spring Boot y el framework Java Server Faces.</li>
+                                        <li>Ejecución de pruebas funcionales y de certificación para garantizar la calidad y correcto funcionamiento de las aplicaciones.</li>
+                                        <li>Despliegue de aplicaciones en los entornos de prueba y producción.</li>
+                                        <li>Soporte correctivo y evolutivo, asegurando la estabilidad del software y la incorporación de mejoras continuas.</li>
+                                    </ul>
+                                    Tecnologías: C#, .NET, .NET Core, Java, Spring Boot, Java Server Faces, IBM Integration Bus, APIs REST, SOAP.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Febrero 2017 – Marzo 2018</p>
+                                <h3 class="item-title">Equifax, Chile</h3>
+                                <h5>Senior Java Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Durante mi tiempo en la empresa, estuve a cargo de la implementación de diversos proyectos, enfocados principalmente en la creación de APIs REST para facilitar la comunicación entre los sistemas internos y diferentes entidades bancarias, como el Banco de Chile y el Banco Santander.
+
+                                Tuve la oportunidad de liderar un proyecto clave para la extensión de uno de los servicios principales de la empresa: la verificación de direcciones, ampliamente utilizada por entidades financieras en el país. Este proyecto implicó la integración de los sistemas de Equifax con los de dos proveedores adicionales, en el marco de una alianza comercial.
+
+                                Además, participé en el desarrollo de procesos automáticos para la facturación de los productos de la compañía y en el mantenimiento evolutivo de los aplicativos internos. En varias ocasiones, brindé apoyo al área de soporte técnico, colaborando en la resolución de incidentes en aplicaciones en producción. <br><br>
+
+                                Funciones:
+                                <ul>
+                                <li>Soporte correctivo y evolutivo del sistema de verificaciones desarrollado en Java 1.4.</li>
+                                <li>Implementación de nuevos servicios en Java 1.8, expuestos a proveedores de verificación de direcciones y asegurados con Spring Security y OAuth2.</li>
+                                <li>Desarrollo de servicios para la integración con entidades financieras, implementando OAuth2 para garantizar la seguridad de las comunicaciones.</li>
+                                <li>Uso de Pentaho para la creación y automatización de procesos de facturación.</li>
+                                <li>Diseño de arquitectura de aplicaciones e implementación de aplicaciones web utilizando Spring Boot.</li>
+                                <li>Creación de consultas complejas a bases de datos para la optimización y procesamiento eficiente de la información.</li>
+                                <li>Soporte evolutivo a aplicaciones desarrolladas en Java 1.6 y Java 1.8, utilizando Spring Framework y aplicaciones basadas en Spring Boot.</li>
+                                <li>Documentación de desarrollos y ajustes realizados, asegurando la trazabilidad y comprensión del código por parte del equipo.</li>
+                                <li>Liderazgo en la implementación de mejoras y en algunos proyectos clave, coordinando equipos y asegurando el cumplimiento de los objetivos técnicos.</li>
+                                </ul>
+                                Tecnologías: Java 1.4, Java 1.6, Java 1.8, Spring Boot, Spring Framework, Spring Security, OAuth2, Pentaho, APIs REST, Oracle Database.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Agosto 2015 – Noviembre 2016</p>
+                                <h3 class="item-title">Serfinansa (Banco Serfinanza), Colombia</h3>
+                                <h5>Analista de Sistemas</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Durante este período, estuve mayormente involucrado en actividades relacionadas con el proyecto de conversión a banco de la compañía financiera. También participé en el desarrollo del servicio de giros con la cadena retail Olímpica, su aliado comercial, y me encargué del soporte técnico tras su puesta en marcha, brindando apoyo en la resolución de incidentes hasta la estabilización del producto.<br><br>
+
+                                Funciones:
+                                <ul>
+                                <li>Colaboración en la implementación de una aplicación desarrollada en Java 1.8 para la integración de nuevas funciones bancarias y su conexión con el Core Bancario, utilizando Java Server Faces como framework.</li>
+                                <li>Integración con sistemas internos y externos mediante servicios SOAP, API REST, colas MQ y tramas, según los requerimientos de cada integración.</li>
+                                <li>Creación de reportes para distintos productos utilizando la librería Apache POI.</li>
+                                <li>Programación de procesos cíclicos mediante la librería Quartz para la automatización de tareas.</li>
+                                <li>Desarrollo de un aplicativo para la gestión de parámetros y generación de reportes del servicio de giros, empleando Angular para el frontend y API REST para la comunicación con el backend.</li>
+                                <li>Implementación de integraciones para optimizar la comunicación con los sistemas de la cadena retail Olímpica a través del integrador CERP Software en el servicio de giros.</li>
+                                <li>Diagnóstico y solución de incidentes en el servicio de giros, asegurando su continuidad operativa y correcto funcionamiento.</li>
+                                </ul>
+                                Tecnologías:
+                                Java 1.8, Java Server Faces, Angular, SOAP, API REST, MQ, Quartz, Apache POI, CERP Software Integration Tool SQL Server, DB2.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Abril 2013 – Agosto 2015</p>
+                                <h3 class="item-title">I2B Technologies, Colombia</h3>
+                                <h5>Consultor Java</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>En esta experiencia, tuve la oportunidad de participar en un proyecto para el Aeropuerto de Santiago de Chile, donde la empresa Maxximiza requería una solución para el control del flujo de vehículos dentro del aeropuerto. Además, colaboré en la entrega de dos prototipos para Entel Chile, participé en un proceso de rebranding para Entel Perú y brindé soporte técnico a las plataformas comerciales de Entel Chile.<br><br>
+
+                                Funciones:
+                                <ul>
+                                <li>Colaboración en proyectos de desarrollo utilizando frameworks como Java Server Faces, Spring y Struts.</li>
+                                <li>Implementación de nuevas funcionalidades en aplicativos de distintos clientes.</li>
+                                <li>Diagnóstico y solución de incidentes en las plataformas comerciales, desarrolladas con frameworks como Java Server Faces y Spring, y bases de datos como Oracle Database.</li>
+                                <li>Implementación de prototipos utilizando tecnologías de la suite Oracle WebCenter, incluyendo Oracle WebCenter Portal y Oracle WebCenter Sites.</li>
+                                <li>Configuración de ambientes con Oracle WebCenter Interaction para un proyecto de rebranding.</li>
+                                <li>Ejecución de pruebas funcionales para garantizar la calidad del software.</li>
+                                <li>Elaboración de documentación técnica y funcional.</li>
+                            </ul>
+                                Tecnologías:
+                                Java 1.6, Java Server Faces, Spring Framework, Struts, Oracle Database, Oracle WebCenter Portal, Oracle WebCenter Sites, Oracle WebCenter Interaction, JavaScript, jQuery.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- education -->
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Mayo 2021</p>
+                                <h3 class="item-title">Udemy</h3>
+                                <h5>Aprende Unit Test en Java con Junit 5 y Mockito</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación.</p>
+                                <a href="https://www.udemy.com/certificate/UC-483d5934-b42d-4391-865e-3e07c52b6609/" target="_blank">UC-483d5934-b42d-4391-865e-3e07c52b6609</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Febrero 2020</p>
+                                <h3 class="item-title">Udemy</h3>
+                                <h5>Desarrollo web con Spring Boot de cero a ninja</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación.</p>
+                                <a href="https://www.udemy.com/certificate/UC-8de7e7e4-747f-4fa1-b822-a8fd7de87954/" target="_blank">UC-8de7e7e4-747f-4fa1-b822-a8fd7de87954</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Julio 2019</p>
+                                <h3 class="item-title">CertMind</h3>
+                                <h5>Scrum Product Owner</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación. Algunos enlaces requieren que ingreses el ID manualmente, así que intenta copiarlo antes de hacer clic en el enlace.</p>
+                                <a href="https://certmind.org/platform/public/index.php/validate-e-cert" target="_blank">138907138</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Diciembre 2018</p>
+                                <h3 class="item-title">CertMind</h3>
+                                <h5>Scrum Master</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación. Algunos enlaces requieren que ingreses el ID manualmente, así que intenta copiarlo antes de hacer clic en el enlace.</p>
+                                <a href="https://certmind.org/platform/public/index.php/validate-e-cert" target="_blank">621357404</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Agosto 2018</p>
+                                <h3 class="item-title">CertMind</h3>
+                                <h5>Scrum Fundamentals</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación. Algunos enlaces requieren que ingreses el ID manualmente, así que intenta copiarlo antes de hacer clic en el enlace.</p>
+                                <a href="https://certmind.org/platform/public/index.php/validate-e-cert" target="_blank">878611341</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Junio 2018</p>
+                                <h3 class="item-title">PeopleCert</h3>
+                                <h5>Itil Foundation</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Para verificar la autenticidad de este certificado, haz clic en el número de identificación. Este enlace te redireccionará al sitio oficial de verificación. Algunos enlaces requieren que ingreses el ID manualmente, así que intenta copiarlo antes de hacer clic en el enlace.</p>
+                                <a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank">GR750437197JM</a>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">Enero 2013</p>
+                                <h3 class="item-title">Universidad Autonoma del Caribe</h3>
+                                <h5>Ingeniería de sistemas</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p> La <a href="https://www.uac.edu.co/" target="_blank">Universidad Autónoma del Caribe</a> es una institución privada de educación superior ubicada en Barranquilla, Colombia. Fue fundada el 27 de marzo de 1967. Para verificar la autenticidad de este certificado, puede solicitar documentos como el diploma o certificado de graduación, consultar directamente con la institución o verificar con la entidad gubernamental que regula la educación, el <a href="https://www.mineducacion.gov.co/portal/" target="_blank">Ministerio de Educación Nacional</a>.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end about-experience -->
+
+    </section>
+    <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capacidades</h2>
+
+                <p class="section-desc">
+                    Mi pasión y objetivo es ayudarte a que tu negocio se destaque.
+                </p>
+            </div>
+        </div>
+        <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Arquitectura de Software</h4>
+                    <p>
+                        Diseño y estructuración de sistemas escalables y mantenibles, aplicando principios de arquitectura de software.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Patrones de Diseño</h4>
+                    <p>
+                        Implementación de patrones de diseño para optimizar el código, mejorar la reutilización y mantener buenas prácticas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Desarrollo e Integración en la Nube</h4>
+                    <p>
+                        Desarrollo e implementación de aplicaciones en la nube, integrando servicios de AWS, Azure o Google Cloud.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Microservicios y Sistemas Distribuidos</h4>
+                    <p>
+                        Diseño e implementación de sistemas distribuidos y arquitectura de microservicios para mejorar la escalabilidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Principios SOLID y Código Limpio</h4>
+                    <p>
+                        Aplicación de principios SOLID y mejores prácticas para garantizar código limpio, mantenible y escalable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Desarrollo e Integración de APIs</h4>
+                    <p>
+                        Diseño, implementación y documentación de APIs REST y GraphQL para una comunicación fluida entre sistemas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Diseño y Optimización de Bases de Datos</h4>
+                    <p>
+                        Modelado de bases de datos SQL y NoSQL, optimización de consultas y estrategias de indexación.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">CI/CD y Prácticas DevOps</h4>
+                    <p>
+                        Automatización de despliegues utilizando herramientas como Docker, Kubernetes, Jenkins, GitHub Actions, etc.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Pruebas y Garantía de Calidad</h4>
+                    <p>
+                        Implementación de pruebas unitarias, de integración y funcionales para garantizar la calidad del software.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Mejores Prácticas de Seguridad</h4>
+                    <p>
+                        Aplicación de estándares de seguridad en el desarrollo backend, protección contra inyección SQL, XSS y autenticación segura.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Metodologías Ágiles y Scrum</h4>
+                    <p>
+                        Trabajo en equipos ágiles utilizando metodologías Scrum y Kanban para entregas incrementales y colaborativas.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Escalabilidad y Optimización de Rendimiento</h4>
+                    <p>
+                        Optimización del rendimiento y escalabilidad de aplicaciones para manejar altos volúmenes de tráfico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Arquitectura Serverless</h4>
+                    <p>
+                        Desarrollo de soluciones serverless utilizando tecnologías basadas en la nube.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Contenedores y Orquestación</h4>
+                    <p>
+                        Uso de contenedores con Docker y orquestación con Kubernetes para mejorar la portabilidad y el despliegue de aplicaciones.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Liderazgo y Colaboración en Equipos</h4>
+                    <p>
+                        Colaboración efectiva en equipos multidisciplinarios, mentoría y liderazgo técnico en proyectos de desarrollo.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Integración Frontend y Backend</h4>
+                    <p>
+                        Integración fluida entre frontend y backend, asegurando un flujo de datos eficiente y un rendimiento óptimo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Desarrollo de Aplicaciones Web</h4>
+                    <p>
+                        Desarrollo de aplicaciones web dinámicas y responsivas utilizando frameworks y tecnologías modernas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Gestión de Estado y Rendimiento del Cliente</h4>
+                    <p>
+                        Implementación de estrategias de gestión de estado y optimización del rendimiento del frontend para mejorar la eficiencia y la experiencia del usuario.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Desarrollo de Aplicaciones Móviles</h4>
+                    <p>
+                        Desarrollo de aplicaciones móviles nativas e híbridas, optimizando el rendimiento y la experiencia del usuario en múltiples plataformas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- end services-list -->
+
+    </section>
+
+    <!-- end s-services -->
+
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Ponte en Contacto</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:#0">juanmercado.se@gmail.com</a>
+                </p>
+
+                <p class="section-desc">
+                    Estoy feliz de conectar, escuchar y ayudar. Trabajemos juntos y construyamos algo increíble. Convirtamos tu idea en un producto aún mejor.
+                    <a href="mailto:#0">Envíame un correo</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/juandmercadol1989/" target="_blank" title="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- end contact-infos -->
+
+    </section>
+
+    <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Epitome 2019</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>    
+    <script src="../js/download-cv.js"></script>
+
+</body>
