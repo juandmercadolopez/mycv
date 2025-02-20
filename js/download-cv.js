@@ -4,12 +4,12 @@ const messages = {
     en: {
         enterPassword: "<b style='color: red;'>Please, enter the password</b>",
         incorrectPassword: "<b style='color: red;'>Incorrect password</b>",
-        errorLoading: "<b style='color: red;'>Error loading password hash</b>"
+        errorLoading: "<b style='color: red;'>Error in the validation process</b>"
     },
     es: {
         enterPassword: "<b style='color: red;'>Por favor, ingrese la contraseña</b>",
         incorrectPassword: "<b style='color: red;'>Contraseña incorrecta</b>",
-        errorLoading: "<b style='color: red;'>Error al cargar el hash de la contraseña</b>"
+        errorLoading: "<b style='color: red;'>Error en el proceso de validación</b>"
     }
 };
 
@@ -24,7 +24,7 @@ const cvPath = {
 
 $(document).ready(function () {
      // Se ajusta el idioma según la URL
-     language = window.location.pathname.includes("/spanish_version/") ? "es" : "en";
+     language = window.location.pathname.includes("/es/") ? "es" : "en";
 });
 
 
@@ -57,9 +57,10 @@ function cleanMessages() {
 }
 
 // Función para cargar el hash almacenado en config.json
-async function getSavedHash() {
+async function getSavedHash() {    
+
     try {
-        const response = await fetch("config/settings.json");
+        const response = await fetch("/config/settings.json");        
         const data = await response.json();
         return data.passwordHash;
     } catch (error) {
