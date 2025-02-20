@@ -59,7 +59,7 @@ function cleanMessages() {
 // Función para cargar el hash almacenado en config.json
 async function getSavedHash() {
     try {
-        const response = await fetch("../config/settings.json");
+        const response = await fetch("/config/settings.json");
         const data = await response.json();
         return data.passwordHash;
     } catch (error) {
