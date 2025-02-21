@@ -24,7 +24,7 @@ const cvPath = {
 
 $(document).ready(function () {
      // Se ajusta el idioma según la URL
-     language = window.location.pathname.includes("/es/") ? "es" : "en";
+     language = window.location.pathname.includes("index_es") ? "es" : "en";
 });
 
 
