@@ -18,7 +18,7 @@ const cvPath = {
         path: "docs/Juan_Mercado-en-cv.pdf"
     },
     es: {
-        path: "../docs/Juan_Mercado-es-cv.pdf"
+        path: "docs/Juan_Mercado-es-cv.pdf"
     }
 };
 
