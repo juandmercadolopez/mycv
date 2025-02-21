@@ -1,5 +1,4 @@
 let language = "en";
-let basePath = "";
 
 const messages = {
     en: {
@@ -26,7 +25,6 @@ const cvPath = {
 $(document).ready(function () {
      // Se ajusta el idioma según la URL
      language = window.location.pathname.includes("/es/") ? "es" : "en";
-     basePath = window.location.origin + window.location.pathname.split('/').slice(0, -1).join('/');
 });
 
 
@@ -62,7 +60,7 @@ function cleanMessages() {
 async function getSavedHash() {    
 
     try {
-        const response = await fetch(basePath + "/config/settings.json");        
+        const response = await fetch("config/settings.json");        
         const data = await response.json();
         return data.passwordHash;
     } catch (error) {
